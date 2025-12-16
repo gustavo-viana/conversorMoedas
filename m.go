@@ -11,7 +11,7 @@ import (
 func main() {
 	tx := 2.5
 	reader := bufio.NewReader(os.Stdin)
-	fmt.Print("Digite o valor: ")
+	fmt.Print("Digite o valor para ser convertido: ")
 	input, _ := reader.ReadString('\n')
 	cleanerValue, err := strconv.ParseFloat(strings.TrimSpace(input), 64)
 	if err != nil {
